@@ -1,0 +1,407 @@
+/* start mobile/tablet section */
+
+@media screen and (max-width: 1023px){
+
+.responsive-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 20%;
+}
+
+body {
+    background-color: rgb(130,130,130);
+}
+
+nav {
+    height: 5vh;
+    width: 100vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.nav-bar .icon {
+    display: none;
+}
+
+.nav-bar {
+    padding: 0px;
+}
+
+li {
+    display: block;
+}
+
+li a {
+    transition: color 0.3s ease;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font: 1em "Cinzel Decorative", "Garamond", "Times New Roman";
+}
+
+li a:active {
+    background-color: #111;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 1vh;
+  left: 3vw;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: white;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.nav-bar
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #333;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.nav-bar li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+li a.current {
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font: 3em "Cinzel Decorative", "Garamond", "Times New Roman";
+}
+
+.stark_title {
+    background-color: #74946f;
+}
+
+.lannister_title {
+    background-color: #920000;
+}
+
+.baratheon_title {
+    background-color: #ffd200;
+}
+
+.targaryen_title {
+    background-color: #bf0000;
+}
+
+.house-info h2 {
+    font: 2em "Cinzel Decorative", "Garamond", "Times New Roman";
+}
+
+.house-info {
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.house-info h3 {
+    font: 1.5em "Garamond", "Times New Roman";
+}
+
+.overview h2 {
+    font: 2em "Cinzel Decorative", "Garamond", "Times New Roman";
+    padding-top: 2vh;
+    text-align: center;
+}
+
+.overview p {
+    text-align: center;
+    font: 120% "Garamond", "Times New Roman";
+    margin-right: 2.5%;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+}
+
+i {
+    font-size: 3em;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+i:active {
+    background-color: #111;
+}
+
+.overview img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 30vh;
+}
+
+}
+
+/* begin mobile landscape mode tweaks */
+
+@media screen and (orientation: landscape){
+    
+    nav {
+        height: 8vh;
+    }
+
+    .overview img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 30vw;
+    }
+
+    i {
+        font-size: 3em;
+        color: white;
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+    }
+}
+
+/* Start Desktop Section */
+
+@media screen and (min-width: 1024px){
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 6fr auto auto 1fr;
+    background-color:rgb(130,130,130);
+    grid-column-gap: 10px;
+    margin: 0;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 20%;
+}
+
+nav {
+    grid-row: 1/2;
+    grid-column: span 3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.nav-bar .icon {
+    display: none;
+}
+
+.nav-bar {
+    padding-top: 2vh;
+}
+
+#menuToggle input {
+    display: none;
+}
+
+li {
+    display: inline-block;
+}
+.house-info {
+    border-right: 2px solid black;
+}
+.house-info li{
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font: 1em "Cinzel Decorative", "Garamond", "Times New Roman";
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a.current {
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+
+.stark_header {
+    grid-area: 2/1/3/-1;
+    background: url("../images/Stark_background.jpg") no-repeat fixed center;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.baratheon_header {
+    grid-area: 2/1/3/-1;
+    background: url("../images/baratheon_background_3.jpg") no-repeat fixed center;
+    background-size: cover;
+    height: 100%;
+}
+
+.lannister_header {
+    grid-area: 2/1/3/-1;
+    background: url("../images/lannister_background.jpg") no-repeat fixed center;
+    background-size: cover;
+    height: 100%;
+}
+
+.targaryen_header {
+    grid-area: 2/1/3/-1;
+    background: url("../images/targaryen_background.jpg") no-repeat fixed center;
+    background-size: cover;
+    height: 100%;
+}
+
+h1 {
+    grid-area: 2/2/3/-1;
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+    font: 7em "Cinzel Decorative", "Garamond", "Times New Roman";
+}
+
+.house-info h2 {
+    font: 2em "Cinzel Decorative", "Garamond", "Times New Roman";
+}
+
+.house-info h3 {
+    font: 1.5em "Garamond", "Times New Roman";
+}
+
+.overview {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.overview h2 {
+    font: 2em "Cinzel Decorative", "Garamond", "Times New Roman";
+}
+
+.overview p {
+    font: 120% "Garamond", "Times New Roman";
+    text-indent: 4em;
+    margin-right: 2.5%;
+}
+
+footer {
+    grid-row-start: -2;
+    grid-row-end: -1;
+    grid-column: span 3;
+    background-color: #333;
+    text-align: center;
+}
+
+i {
+    font-size: 3em;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+i:hover {
+    background-color: #111;
+}
+}
+
