@@ -1,0 +1,23 @@
+.gallery{
+	width: 95%;
+	margin:0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 450px){
+	.gallery {
+	grid-template-columns: 1fr;
+	}
+}
+
+.gallery img{
+	width: 100%;
+}
+
+.item{
+	border: 2px solid black;
+}

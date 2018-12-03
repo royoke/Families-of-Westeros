@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Families of Westeros</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/familystyle.css">
+    <link rel='stylesheet' href="css/lightbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="images/Stark_sigil.png"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+    <body class="grid">
+         <a href="#content" class="skip">Skip to main content</a>
+
+        <nav>
+            <div id="menuToggle">
+                <input type="checkbox" aria-label="click to expand navigation menu"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class = "nav-bar">
+                    <li><a class="current" href="stark.html">Stark</a></li>
+                    <li><a href="lannister.html">Lannister</a></li>
+                    <li><a href="baratheon.html">Baratheon</a></li>
+                    <li><a href="targaryen.html">Targaryen</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="stark_header">
+            <h1 class="stark_title"> House Stark</h1>
+        </header>
+        
+        <aside>
+        <ul class="house-info">
+            <li><img class="sigil" src="images/Stark_sigil.png" alt="An image of House starks sigil, to represent how they are identified"/></li>
+            <li><h2>House Info:</h2></li>
+            <li><h3><b>Sigil:</b> A grey direwolf on a white field</h3></li>
+            <li><h3><b>Words:</b> "Winter is Coming"</h3></li>
+            <li><h3><b>Seat:</b> Winterfell</h3></li>
+            <li><h3><b>Region:</b> The North</h3></li>
+            <li><h3><b>In-Show Death Counter:</b> 4</h3></li>
+        </ul>
+        </aside>
+   
+        <main class = "overview" id="content">
+            <h2>Overview:</h2> 
+            <p>House Stark of Winterfell is a Great House of Westeros, ruling over the vast region known as the North from their seat in Winterfell. It is one of the oldest lines of Westerosi nobility by far, claiming a line of descent stretching back over eight thousand years. Before the Targaryen conquest, as well as during the War of the Five Kings and Daenerys Targaryen's invasion of Westeros, the leaders of House Stark ruled over the region as the Kings in the North.</p>
+            <img class="seat responsive-image" src="images/Winterfell.jpg" alt="An image of Winterfell, to show House Stark's seat and where the house lives"/>
+
+            <p>Their rule in the North seemingly ended after the events of the Red Wedding when House Frey and House Bolton betrayed House Stark after forming a secret alliance with House Lannister, during which Roose Bolton murdered King Robb Stark. Both the North and Winterfell were taken over by House Bolton. However, the Bolton's hold was jeopardized when Sansa Stark escaped their clutches after learning her brothers Bran and Rickon Stark were still alive and reunited with her half-brother Jon Snow at Castle Black. Sansa and Jon marched on the Boltons to save their younger brother Rickon, who was later murdered by Ramsay Bolton, and retake their family home Winterfell. House Stark was restored to their former stature after the Battle of the Bastards. The Stark victory led to House Stark's return to royal status in the North with their bannermen declaring Ned Stark's illegitimate son Jon Snow as the King in the North. He later abdicated his title as king in order to gain the full support of Daenerys Targaryen in the Great War, becoming the Warden of the North.</p>
+            <img class ="responsive-image" src="images/Stark_family.jpg" alt="A photo of the Stark Family to display the characters/actors being discussed."/>
+
+            <p>House Stark's sigil is a grey direwolf on a white background, over a green escutcheon. They are one of the few noble Houses whose family motto is not a boast or threat. Instead, the House Stark family motto is a warning, one that, no matter the circumstances, will always be relevant: "Winter Is Coming."</p>
+
+            <h2>Meet the Family:</h2>
+            <button type="button" class='toggle'> Warning! The following content contains spoilers. Click to toggle visibility</button>
+            
+            <div class="controls hide">
+                <p class="filter"> Filter By: </p> 
+                <button type="button" class="control" data-filter="all">All</button>
+                <button type="button" class="control" data-filter=".alive">Alive</button>
+                <button type="button" class="control" data-filter=".dead">Dead</button>
+            </div>
+
+            <div class = "gallery container hide">
+                <a href="images/ned_stark.jpeg" data-lightbox='starks' data-title="Edard Stark" class="mix dead"><img src="images/ned_stark.jpeg" alt='An image of Ned Stark, the father of the Stark Family'></a>
+                <a href="images/catelyn-stark.jpeg" data-lightbox='starks' data-title="Catelyn Stark" class="mix dead"><img src='images/catelyn-stark.jpeg' alt='An image of Catelyn Stark, the mother of the Stark Family'></a>
+                <a href="images/robb_stark.jpeg" data-lightbox='starks' data-title="Robb Stark" class="mix dead"><img src="images/robb_stark.jpeg" alt="An image of Robb Stark, the eldest son in the Stark Family"></a>
+                <a href="images/jon_snow.jpeg" data-lightbox='starks' data-title="Jon Snow" class="mix alive"><img src="images/jon_snow.jpeg" alt="An image of Jon Snow, Ned Stark's bastard son"></a>
+                <a href="images/sansa_stark.jpeg" data-lightbox='starks' data-title="Sansa Stark" class="mix alive"><img src="images/sansa_stark.jpeg" alt='An image of Sansa Stark, the eldest daughter of the Stark Family'></a>
+                <a href="images/bran_stark.jpeg" data-lightbox='starks' data-title="Brandon Stark" class="mix alive"><img src="images/bran_stark.jpeg" alt='An image of Brandon Stark, the middle son of the Stark Family'></a>
+                <a href="images/arya_stark.jpeg" data-lightbox='starks' data-title="Arya Stark" class="mix alive"><img src="images/arya_stark.jpeg" alt='An image of Arya Stark, the youngest daughter of the Stark Family'></a>
+                <a href="images/rickon_stark.jpeg" data-lightbox='starks' data-title="Rickon Stark" class="mix dead"><img src="images/rickon_stark.jpeg" alt='An image of Rickon Stark, the youngest son of the Stark Family'></a>            
+            </div>
+        </main>
+
+        <footer>
+            <a href = "https://twitter.com/GameOfThrones?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter-square" ></i></a>
+            <a href = "https://www.instagram.com/gameofthrones/?hl=en" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href = "https://www.facebook.com/GameOfThrones/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href = "https://www.reddit.com/r/gameofthrones/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit-square"></i></a>
+        </footer>
+
+        <script>
+            $(".hide").hide();
+            $(".toggle").click(function() {
+                $(".hide").toggle();
+            });
+        </script>
+        <script src="JS/lightbox.js"></script>
+        <script src="JS/mixitup.js"></script>
+        <script>
+            var containerEl = document.querySelector('.container');
+            var mixer = mixitup(containerEl);
+        </script>
+    </body>
+</html>
