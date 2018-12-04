@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Families of Westeros</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/familystyle.css">
+    <link rel='stylesheet' href="css/lightbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="images/Lannister_sigil.png"> 
+
+</head>
+    <body class = "grid">
+        <a href="#content" class="skip">Skip to main content</a>
+
+        <nav>
+            <div id="menuToggle">
+                <input type="checkbox" aria-label="click to expand navigation menu"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class = "nav-bar">
+                    <li><a href="stark.html">Stark</a></li>
+                    <li><a class="current" href="lannister.html">Lannister</a></li>
+                    <li><a href="baratheon.html">Baratheon</a></li>
+                    <li><a href="targaryen.html">Targaryen</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="lannister_header">
+            <h1 class="lannister_title">House Lannister</h1>
+        </header>
+
+        <aside>
+        <ul class="house-info">
+            <li><img class="sigil" src="images/Lannister_sigil.png" alt="An image of House Lannister sigil, to represent how they are identified"/></li>
+            <li><h2>House Info:</h2></li>
+            <li><h3><b>Sigil:</b> A golden lion rampant on a crimson field.</h3></li>
+            <li><h3><b>Words:</b> “Hear me Roar”</h3></li>
+            <li><h3><b>Seat:</b> Casterly Rock/Kings Landing</h3></li>
+            <li><h3><b>Region:</b> The Westerlands</h3></li>
+            <li><h3><b>In-Show Death Counter:</b> 4</h3></li>
+        </ul>
+        </aside>
+
+        <main class = "overview" id="content">
+            <h2>Overview:</h2>
+            <p>House Lannister of Casterly Rock is one of the Great Houses of Westeros, one of its richest and most powerful families and oldest dynasties. It is also the current royal house of the Seven Kingdoms following the extinction of House Baratheon of King's Landing, which had been their puppet house anyway.</p>
+            <img class="seat responsive-image" src="images/Casterly_Rock.png" alt="An image of Casterly Rock, to reveal what the Lannister seat looks like."/>
+
+            <p>The Lannisters rule over the Westerlands. Their seat is Casterly Rock, a massive rocky promontory overlooking the Sunset Sea which has had habitations and fortifications built into it over the millennia. They are the Lords Paramount of the Westerlands and Wardens of the West. As the new royal house, they also rule directly over the Crownlands from their seat of the Red Keep in King's Landing, the traditional seat of the royal family. House Lannister's Heraldry consists of a golden lion on a crimson background, and their House words are "Hear me roar!", which is rarely mentioned. Their unofficial motto, which is as well known as the official one, is "A Lannister always pays his debts" - which is used much more often and mostly in negative context, though it can also be used in the original, literal sense.</p>
+
+            <p>The incestuous relationship of Cersei and Jaime has been concealed in a conspiracy. Their son Joffrey Baratheon has claimed the Iron Throne on the premise that he was actually fathered by the late King Robert Baratheon. Lord Tywin was a key supporter of his reign in the War of the Five Kings.</p>
+
+            <h2>Meet the Family:</h2>
+            <button type="button" class='toggle'> Warning! The following content contains spoilers. Click to toggle visibility</button>
+            
+            <div class="controls hide">
+                <p class="filter"> Filter By: </p> 
+                <button type="button" class="control" data-filter="all">All</button>
+                <button type="button" class="control" data-filter=".alive">Alive</button>
+                <button type="button" class="control" data-filter=".dead">Dead</button>
+            </div>
+
+            <div class = "gallery container hide">
+                <a href="images/tywin-lannister.jpeg" data-lightbox='lannisters' data-title="Tywin Lannister" class="mix dead"><img src="images/tywin-lannister.jpeg" alt='An image of Tywin, the father of the Lannister Family'></a>
+                <a href="images/tyrion-lannister.jpeg" data-lightbox='lannisters' data-title="Tyrion Lannister" class="mix alive"><img src='images/tyrion-lannister.jpeg' alt='An image of Tyrion Lannister, the youngest son of Tywin, and a dwarf'></a>
+                <a href="images/cersei-lannister.jpeg" data-lightbox='lannisters' data-title="Cersei Lannister" class="mix alive"><img src="images/cersei-lannister.jpeg" alt="An image of Cersei Lannister, daughter of Tywin"></a>
+                <a href="images/jamie-lannister.jpeg" data-lightbox='lannisters' data-title="Jamie Lannister" class="mix alive"><img src="images/jamie-lannister.jpeg" alt="An image of Jamie Lannister, Tywins eldest son"></a>
+                <a href="images/joffrey-baratheon.jpeg" data-lightbox='lannisters' data-title="Joffrey Baratheon" class="mix dead"><img src="images/joffrey-baratheon.jpeg" alt='An image of Joffrey Baratheon, the eldest bastard son of Jamie & Cersei Lannister'></a>
+                <a href="images/tommen-baratheon.jpeg" data-lightbox='lannisters' data-title="Tommen Baratheon" class="mix dead"><img src="images/tommen-baratheon.jpeg" alt='An image of Tommen Baratheon, the youngest bastard son of Jamie & Cersei Lannister'></a>
+                <a href="images/myrcella-baratheon.jpeg" data-lightbox='lannisters' data-title="Myrcella Baratheon" class="mix dead"><img src="images/myrcella-baratheon.jpeg" alt='An image of Myrcella Baratheon, the youngest bastard daughter of Cersei & Jaime Lannister'></a>            
+            </div>
+
+        </main>
+    
+
+        <footer>
+            <a href = "https://twitter.com/GameOfThrones?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter-square" ></i></a>
+            <a href = "https://www.instagram.com/gameofthrones/?hl=en" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href = "https://www.facebook.com/GameOfThrones/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href = "https://www.reddit.com/r/gameofthrones/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit-square"></i></a>
+        </footer>
+    
+        <script>
+            $(".hide").hide();
+            $(".toggle").click(function() {
+                $(".hide").toggle("slow");
+            });
+        </script>
+        <script src="JS/lightbox.js"></script>
+        <script src="JS/mixitup.js"></script>
+        <script>
+            var containerEl = document.querySelector('.container');
+            var mixer = mixitup(containerEl);
+        </script>
+    </body>
+</html>

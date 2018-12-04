@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Families of Westeros</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/familystyle.css">
+    <link rel='stylesheet' href="css/lightbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="images/Targaryen_sigil.png"> 
+
+</head>
+    <body class="grid">
+        <a href="#content" class="skip">Skip to main content</a>
+
+    
+        <nav>
+            <div id="menuToggle">
+                <input type="checkbox" aria-label="click to expand navigation menu"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class = "nav-bar">
+                    <li><a href="stark.html">Stark</a></li>
+                    <li><a href="lannister.html">Lannister</a></li>
+                    <li><a href="baratheon.html">Baratheon</a></li>
+                    <li><a class="current" href="targaryen.html">Targaryen</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="targaryen_header">
+            <h1 class="targaryen_title">House Targaryen</h1>
+        </header>
+
+        <aside>
+        <ul class="house-info">
+            <li><img class="sigil" src="images/Targaryen_sigil.png" alt="An image of House Lannister sigil, to represent how they are identified"/></li>
+            <li><h2>House Info:</h2></li>
+            <li><h3><b>Sigil:</b> A red three-headed dragon, on a black field.</h3></li>
+            <li><h3><b>Words:</b> “Fire and Blood”</h3></li>
+            <li><h3><b>Seat:</b> Dragonstone </h3></li>
+            <li><h3><b>Region:</b> The Crownlands</h3></li>
+            <li><h3><b>In-Show Death Counter:</b> 2</h3></li>
+        </ul>
+        </aside>
+        
+
+        <main class = "overview" id="content">
+            <h2>Overview: </h2>
+    
+            <p>House Targaryen of Dragonstone is a Great House of Westeros and was the ruling royal House of the Seven Kingdoms for three centuries since it conquered and unified the realm, before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House. The two surviving Targaryens fled into exile to the Free Cities of Essos across the Narrow Sea. Currently based on Dragonstone off of the eastern coast of Westeros, House Targaryen seeks to retake the Seven Kingdoms from House Lannister, who formally replaced House Baratheon as the royal House following the destruction of the Great Sept of Baelor.</p>
+            <img class="seat responsive-image" src="images/Dragonstone.jpg" alt="An image of Casterly Rock, to reveal what the Lannister seat looks like."> 
+        
+            <h2>Meet the Family:</h2>
+            <button type="button" class='toggle'> Warning! The following content contains spoilers. Click to toggle visibility</button>
+            
+            <div class="controls hide">
+                <p class="filter"> Filter By: </p> 
+                <button type="button" class="control" data-filter="all">All</button>
+                <button type="button" class="control" data-filter=".alive">Alive</button>
+                <button type="button" class="control" data-filter=".dead">Dead</button>
+            </div>
+
+
+            <div class = "gallery container hide">
+                <a href="images/aemon-targaryen.jpeg" data-lightbox='targaryen' data-title="Aemon Targaryen" class="mix dead"><img src="images/aemon-targaryen.jpeg" alt='An image of Aemon Targaryen, The great uncle of the Targaryen Children'></a>
+                <a href="images/aerys-targaryen.jpeg" data-lightbox='targaryen' data-title="Aerys Targaryen" class="mix dead"><img src='images/aerys-targaryen.jpeg' alt='An image of Aerys Targaryen, better know as the mad king, who is the father of the targaryen children'></a>
+                <a href="images/rhaegar-targaryen.jpeg" data-lightbox='targaryen' data-title="Rhaegar Targaryen" class="mix dead"><img src="images/rhaegar-targaryen.jpeg" alt="An image of Rhaegar Targaryen, the eldest son of the Targaryen family"></a>
+                <a href="images/daenerys-targaryen.jpeg" data-lightbox='targaryen' data-title="Daenerys Targaryen" class="mix alive"><img src="images/daenerys-targaryen.jpeg" alt="An image of Daenerys Targaryen, the only daughter of the Targaryen family"></a>
+                <a href="images/viserys-targaryen.jpeg" data-lightbox='targaryen' data-title="Viserys Targaryen" class="mix dead"><img src="images/viserys-targaryen.jpeg" alt="An image of Viserys Targaryen, the youngest son of the Targaryen family"></a>          
+            </div>
+
+        </main>
+    
+
+        <footer>
+            <a href = "https://twitter.com/GameOfThrones?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter-square" ></i></a>
+            <a href = "https://www.instagram.com/gameofthrones/?hl=en" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href = "https://www.facebook.com/GameOfThrones/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href = "https://www.reddit.com/r/gameofthrones/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit-square"></i></a>
+        </footer>
+
+        <script>
+            $(".hide").hide();
+            $(".toggle").click(function() {
+                $(".hide").toggle("slow");
+            });
+        </script>
+        <script src="JS/lightbox.js"></script>
+        <script src="JS/mixitup.js"></script>
+        <script>
+            var containerEl = document.querySelector('.container');
+            var mixer = mixitup(containerEl);
+        </script>
+    </body>
+</html>
